@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	background-color: tomato;
+}
+div{
+	width: 500px;
+	margin: 50px auto;
+	padding: 30px;
+	background-color: white;
+}
+h1{
+	font-size: 25px;
+	color: brown;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+  }
+p{
+	font-size: 14px;
+	color: brown;
+	margin: 0;
+}
+input[type="text"],
+textarea,select{
+	width: 300px;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+select{
+	width: auto;
+}
+textarea{
+	height: 200px;
+}
+/* .textadd{
+	margin: 16px auto;
+	text-align: center;
+	display: block;
+	border: 1px solid #000; */
+/* }
+.textadd .text{
+	text-align: left;
+	display: inline-block;
+}
+table {
+    margin-left: auto;
+    margin-right: auto; */
+}
+/* body {
+	background-color: #4cd;
+} */
+/* .text{
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+} */
+/* input.artist{
+	width:100px;
+	height:30px;
+}
+#eventname{
+	width:100px;
+	height:30px;
+} */
+
+/* .form-group{
+	margin-bottom: 35px;
+  } */
+/* div.artist_name{
+	font-size: 40px;
+	background-color: blue;
+	color: white;
+} */
+/* p {
+	counter-reset:cp_clist;
+	list-style: none;
+	padding:0.5em;
+	height:1em;
+    display: flex;
+    text-align: center;
+} */
+/* input,textarea{
+	padding: 100px;
+	text-align: center;
+} */

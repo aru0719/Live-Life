@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>WORKS | MY PORTFOLIO</title>
+  <link rel="stylesheet" href="kyoukasyo.css">
+  <title>Hot dogs == sandwiches?</title>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+       <p class="row">
+                <h1>主催者入力</h1>
+       </p>
+      </header>
+  <p>アーティスト名</p>
+  <p><input type="text" id="artist"></p>
+  <p>イベント名</p>
+  <p><input type="text" id="eventname"></p>
+  <p>開催場所</p>
+  <p><input type="text" id="where"></p>
+  <p style="margin-top: 20px">イベント系統</p>
+  <p>
+    <select name="question" id="eventques">
+      <option selected>ライブハウス</opttion>
+      <option>路上ライブ</option>
+      <option>イベント</option>
+    </select>
+  </p>
+  <p style="margin-top: 20px">ジャンル</p>
+  <p>
+  <p>
+    <select name="question" id="genreques">
+      <option selected>ロック</opttion>
+      <option>ポップ</option>
+      <option>ラップ</option>
+      <option>アイドル</option>
+      <option>レゲエ</option>
+    </select>
+  </p>
+  <p>開催日</p>
+  <p><input type="date" id="date"></p>
+  <p>料金</p>
+      <p>チケット</p>
+      <input type="number" id="tik">
+  　　<p>ドリンク</p>
+      <input type="number" id="dur"></p><br>
+  <p>備考</p>
+  <p><textarea id="detail"></textarea></p>
+  <p>
+    <button id ="saveButton">確認</button>
+    <!-- <button id ="loadButton"></button> -->
+  </p>
+</div>
+    <script src="./appsyusai.js"></script>
+</body>
+  </header>
+  <main>
+    <section>
+      <!--  -->
+    </section>
+  </main>
+  <footer>
+    <address>(c) 2020 MY PORTFOLIO</address>
+  </footer>
+</body>
+</html>
