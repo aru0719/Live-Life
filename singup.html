@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Life live-ログイン画面</title>
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    </head>       
+    <body>
+        <h1>Life live</h1>
+        <div class="container">
+            
+            <!-- メール -->
+            <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com">
+        
+            <!-- パスワード -->
+            <input id="txtPassword" type="password"  placeholder="パスワード">
+            <!-- Sign Upボタン -->
+            <button id="btnSignUp" class="btn btn-secondary">
+            アカウント登録
+            </button>
+            
+        </div>
+        <!-- JavaScriptを実行 -->
+        <script src="app2.js"></script>
+        <script src="sha256.js"></script>
+        
+    </body>
+</html>
