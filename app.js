@@ -32,15 +32,15 @@ btnLogin.addEventListener('click', e => {
     console.log(hash);
     var _mail = localStorage.getItem("shamail");
     console.log(_mail);
-    //document.location.assign('singup.html');
+    document.location.assign('お気に入りリスト'+'/sample.html');
 });
-   
+/*   
     //Log outボタンのclickイベント
     //クリックされた時に実行する処理
 btnLogout.addEventListener('click', e =>   {
     firebase.auth().signOut();  //サインアウト
 });
-    
+*/  
     //ログインしているユーザー情報を返す非同期（コールバック）処理
     //認証状態を取得
 firebase.auth().onAuthStateChanged(function(firebaseUser) {

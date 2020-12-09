@@ -24,27 +24,33 @@
                 <p class="logo"><img src="images/log.png" alt="Live Life"></p>
             </div>
         </header>
-        <div class="container">
-            
-            <!-- メール -->
-            <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com">
+        <div class="container" align="center">
+            <table border="0">
+                <tr>
+                    <th align="center">
+                        E-mail
+                    </tr>
+                    <td align="center">
+                        <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com" value="" size="24">
+                    </td>
+                
+                <tr>
+                    <th align="center">
+                        password
+                    </tr>
+                    <td align="center">
+                        <input id="txtPassword" type="password"  placeholder="password" value="" size="24">
+                    </td>
+                
+            </table>
         
-            <!-- パスワード -->
-            <input id="txtPassword" type="password"  placeholder="パスワード">
-
-            
             <!-- log inボタン -->
-            <button id="btnLogin" class="btn btn-action">
-            ログイン
-            </button>
-            
-            <!-- Log outボタン -->
-            <button id="btnLogout" class="btn btn-action hide" >
-            ログアウト
+            <button id="btnLogin" class="btn btn-action" >
+                 Sing on
             </button>
         </div>
         <div>
-            <a href="singup.html">create account</a>
+            <a id="singupchange" href="singup.html">create account</a>
         </div>
         <!-- JavaScriptを実行 -->
         <script src="app.js"></script>
