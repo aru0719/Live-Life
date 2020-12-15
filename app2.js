@@ -42,7 +42,9 @@ btnSignUp.addEventListener('click', e => {
     });
     
     promise.catch(function(e){console.log(e.message)}); //結果をconsoleに表示
+
 });
+
    
     
     //ログインしているユーザー情報を返す非同期（コールバック）処理
@@ -50,7 +52,10 @@ btnSignUp.addEventListener('click', e => {
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser){
         console.log(firebaseUser.email);    //認証済みの場合はユーザ情報のメールをconsoleに表示
+        alert("ログイン画面に移ります")
+        document.location.assign("login.html");
     } else {
         console.log('not logged in');       //未認証の場合は「not logged in」をconsoleに表示
+
     };
 });

@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="acount_PC.css">
         <title>Life live-ログイン画面</title>
         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
@@ -18,18 +19,36 @@
 
     </head>       
     <body>
-        <h1>Life live</h1>
-        <div class="container">
-            
+        <header>
+            <div class="top_img">
+                <p class="logo"><img src="images/log.png" alt="Live Life"></p>
+            </div>
+        </header>    
+        <div class="container" align="center">
+            <table border="0">
+                <tr>
+                    <th align="center">
+                        E-mail
+                    </th>
+                </tr>
             <!-- メール -->
-            <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com">
-        
+                    <td align="center">
+                        <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com">
+                    </td>
             <!-- パスワード -->
-            <input id="txtPassword" type="password"  placeholder="パスワード">
-            <!-- Sign Upボタン -->
-            <button id="btnSignUp" class="btn btn-secondary">
-            アカウント登録
-            </button>
+                <tr>
+                    <th align="center">
+                        password
+                    </th>
+                </tr>
+                    <td align="center">
+                        <input id="txtPassword" type="password"  placeholder="パスワード">
+                    </td>
+                        <!-- Sign Upボタン -->
+                </table>
+        <button id="btnSignUp" class="btn btn-secondary" href="login.html">
+                アカウント登録
+        </button>
             
         </div>
         <!-- JavaScriptを実行 -->

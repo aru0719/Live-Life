@@ -21,31 +21,37 @@ const btnLogout = document.getElementById('btnLogout');     //Log outボタン
     //クリックされた時に実行する処理
 btnLogin.addEventListener('click', e => {
     var email = txtEmail.value;   //メールを取得
+    const pass = txtPassword.value; //パスワードを取得
+    if (email == "" || pass ==""){
+        alert("入力欄に入力がありません")
+    }
     var shaObj = new jsSHA("SHA-256","TEXT");
     shaObj.update(email);
     var hash = shaObj.getHash("HEX");
     localStorage.setItem('shamail',hash);
-    const pass = txtPassword.value; //パスワードを取得
-    const auth = firebase.auth();   //FirebaseAuthenticationを取得
-    const promise = auth.signInWithEmailAndPassword(email, pass);   //メールとパスワードでサインイン可
-    promise.catch(e => console.log(e.message)); //結果をconsoleに表示
     console.log(hash);
     var _mail = localStorage.getItem("shamail");
     console.log(_mail);
-    document.location.assign('お気に入りリスト'+'/sample.html');
+    firebase.auth().signInWithEmailAndPassword(email, pass).then(user => {
+        document.location.assign('お気に入りリスト'+'/sample.html');
+    },error => {
+        alert("メールアドレス又はパスワードが間違っています")
+    })   //メールとパスワードでサインイン可
+    //document.location.assign('お気に入りリスト'+'/sample.html');
 });
-/*   
+   
     //Log outボタンのclickイベント
     //クリックされた時に実行する処理
 btnLogout.addEventListener('click', e =>   {
     firebase.auth().signOut();  //サインアウト
 });
-*/  
+  
     //ログインしているユーザー情報を返す非同期（コールバック）処理
     //認証状態を取得
 firebase.auth().onAuthStateChanged(function(firebaseUser) {
     if (firebaseUser){
         console.log(firebaseUser.email);    //認証済みの場合はユーザ情報のメールをconsoleに表示
+        //document.location.assign('お気に入りリスト'+'/sample.html');
     } else {
         console.log('not logged in');       //未認証の場合は「not logged in」をconsoleに表示
     };

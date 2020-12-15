@@ -2,7 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="protologin.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" media="(min-width: 640px)" href="acount_PC.css">
+        <link rel="stylesheet" media="(max-width: 640px)" href="acount_mobile.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
         <title>Life live-ログイン画面</title>
         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
@@ -24,30 +27,20 @@
                 <p class="logo"><img src="images/log.png" alt="Live Life"></p>
             </div>
         </header>
-        <div class="container" align="center">
-            <table border="0">
-                <tr>
-                    <th align="center">
-                        E-mail
-                    </tr>
-                    <td align="center">
-                        <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com" value="" size="24">
-                    </td>
-                
-                <tr>
-                    <th align="center">
-                        password
-                    </tr>
-                    <td align="center">
+        <div id="login" align="center">
+                        <p id="email">E-mail</p>
+                            <input id="txtEmail" type="email" autocomplete="on" placeholder="info@example.com" value="" size="24">
+                        <p id="password">password</p>
                         <input id="txtPassword" type="password"  placeholder="password" value="" size="24">
-                    </td>
-                
-            </table>
-        
+        </div>
+        <div id="button" align="center">
             <!-- log inボタン -->
             <button id="btnLogin" class="btn btn-action" >
-                 Sing on
+                Sing on
             </button>
+            <button id="btnLogout" class="btn btn-action" >
+                Sign out
+           </button>
         </div>
         <div>
             <a id="singupchange" href="singup.html">create account</a>
