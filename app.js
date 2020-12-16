@@ -1,12 +1,12 @@
 //firebaseSDKのキー設定を追加する
 const firebaseConfig = {
-    apiKey: "AIzaSyDuGjBb3ybcOncfoukk8o-3wIqV7WIEDTo",
-    authDomain: "live-life-3eaa6.firebaseapp.com",
-    projectId: "live-life-3eaa6",
-    storageBucket: "live-life-3eaa6.appspot.com",
-    messagingSenderId: "698245895223",
-    appId: "1:698245895223:web:15e26e07db0d07ee339bb2",
-    measurementId: "G-69YCJJ4MQZ"
+    apiKey: "AIzaSyDgMBTHoIta-EzF2JkTQbHvgPEqtzKPatM",
+    authDomain: "life-live-join.firebaseapp.com",
+    projectId: "life-live-join",
+    storageBucket: "life-live-join.appspot.com",
+    messagingSenderId: "56409696436",
+    appId: "1:56409696436:web:3c6ef0af6fb01ccdef8fe1",
+    measurementId: "G-5RWQKGXJZG"
 };
     // Retrieve an instance of Firebase Messaging so that it can handle background messages.
     
